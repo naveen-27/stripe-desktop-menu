@@ -66,10 +66,10 @@ const handleMouseLeave = (e) => {
 };
 
 const forceInitialState = () => {
-  expandMenu.classList.remove("expand");
-  expandMenu.classList.remove("active");
-  indicator.style.opacity = "0";
+  expandMenu.classList.remove("expand", "active");
   currentNav.classList.remove("hover");
+  menus.forEach((menu) => menu.removeAttribute("class"));
+  indicator.style.opacity = "0";
   currentNav = null;
   navsVisited = 0;
 };
