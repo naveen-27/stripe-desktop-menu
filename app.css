@@ -118,8 +118,8 @@ header {
   background-color: white;
   border-radius: 0.5rem;
   perspective: 100px;
-  transition: width 200ms ease, height 200ms ease, opacity 150ms ease,
-    transform 150ms ease-in;
+  transition: width 250ms ease, height 250ms ease, opacity 150ms ease,
+    transform 200ms ease-in;
   overflow: hidden;
   opacity: 0;
   pointer-events: none;
