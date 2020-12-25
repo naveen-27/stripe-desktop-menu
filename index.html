@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="Stripe Logo" />
+      <nav class="navbar">
+        <ul class="nav__links">
+          <li data-expand="products" class="nav--link">Products</li>
+          <li data-expand="use-cases" class="nav--link">Use Cases</li>
+          <li data-expand="developers" class="nav--link">Developers</li>
+          <li data-expand="company" class="nav--link">Company</li>
+        </ul>
+      </nav>
+
+      <button class="btn btn--primary">
+        <span>Sign in</span>
+        <div class="arrow">
+          <div class="line arrow--sideUp"></div>
+          <div class="line arrow--sideDown"></div>
+          <div class="line arrow--hoverLine"></div>
+        </div>
+      </button>
+
+      <div class="tip"></div>
+      <section class="header__expandMenu">
+        <div class="menu__container">
+          <div id="products">
+            <div class="sub__menu">
+              <h3 class="title">PAYMENTS</h3>
+              <ul class="subMenu__items">
+                <li class="subMenu--item">
+                  <img src="./images/payment.svg" alt="" />
+                  <span class="label__container">
+                    <div class="label">
+                      Payments
+                      <img
+                        class="right--arrow"
+                        src="./images/right-arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="label--desc">Online payments</div>
+                  </span>
+                </li>
+
+                <li class="subMenu--item">
+                  <img src="./images/terminal.svg" alt="" />
+                  <span class="label__container">
+                    <div class="label">
+                      Terminal
+                      <img
+                        class="right--arrow"
+                        src="./images/right-arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="label--desc">In-person payments</div>
+                  </span>
+                </li>
+
+                <li class="subMenu--item">
+                  <img src="./images/connect.svg" alt="" />
+                  <span class="label__container">
+                    <div class="label">
+                      Connect
+                      <img
+                        class="right--arrow"
+                        src="./images/right-arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="label--desc">Payments for platforms</div>
+                  </span>
+                </li>
+
+                <li class="subMenu--item">
+                  <img src="./images/billing.svg" alt="" />
+                  <span class="label__container">
+                    <div class="label">
+                      Billing
+                      <img
+                        class="right--arrow"
+                        src="./images/right-arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="label--desc">Subscriptions & invoicing</div>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sub__menu">
+              <h3 class="title">PAYOUTS</h3>
+              <ul class="subMenu__items">
+                <li class="subMenu--item">
+                  <img src="./images/payouts.svg" alt="" />
+                  <span class="label__container">
+                    <div class="label">
+                      Payouts
+                      <img
+                        class="right--arrow"
+                        src="./images/right-arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="label--desc">Programmatic payouts</div>
+                  </span>
+                </li>
+
+                <li class="subMenu--item">
+                  <img src="./images/issuing.svg" alt="" />
+                  <span class="label__container">
+                    <div class="label">
+                      Issuing
+                      <img
+                        class="right--arrow"
+                        src="./images/right-arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="label--desc">Card creation</div>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sub__menu">
+              <h3 class="title">BUISNESS OPERATIONS</h3>
+              <ul class="subMenu__items">
+                <li class="subMenu--item">
+                  <img src="./images/radar.svg" alt="" />
+                  <span class="label__container">
+                    <div class="label">
+                      Radar
+                      <img
+                        class="right--arrow"
+                        src="./images/right-arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="label--desc">Fraud & risk management</div>
+                  </span>
+                </li>
+
+                <li class="subMenu--item">
+                  <img src="./images/sigma.svg" alt="" />
+                  <span class="label__container">
+                    <div class="label">
+                      Sigma
+                      <img
+                        class="right--arrow"
+                        src="./images/right-arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="label--desc">Custom reports</div>
+                  </span>
+                </li>
+
+                <li class="subMenu--item">
+                  <img src="./images/atlas.svg" alt="" />
+                  <span class="label__container">
+                    <div class="label">
+                      Atlas
+                      <img
+                        class="right--arrow"
+                        src="./images/right-arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="label--desc">Start-up incorporation</div>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="use-cases">
+            <ul class="subMenu__items">
+              <li class="subMenu--item">
+                <img class="icon--production" src="./images/saas.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    SaaS
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="label--desc">
+                    Manage recurring bills and subscriptions
+                  </div>
+                </span>
+              </li>
+
+              <li class="subMenu--item">
+                <img
+                  class="icon--production"
+                  src="./images/marketplace.svg"
+                  alt=""
+                />
+                <span class="label__container">
+                  <div class="label">
+                    Marketplaces
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="label--desc">
+                    Pay out globally and facilitate multi-party payments
+                  </div>
+                </span>
+              </li>
+
+              <li class="subMenu--item">
+                <img
+                  class="icon--production"
+                  src="./images/platform.svg"
+                  alt=""
+                />
+                <span class="label__container">
+                  <div class="label">
+                    Platform
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="label--desc">
+                    Let customers accept payments within your platform
+                  </div>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="developers">
+            <div class="subMenu--item item--one">
+              <img
+                class="icon--production"
+                src="./images/documentation.svg"
+                alt=""
+              />
+              <span class="label__container">
+                <div class="label">
+                  Documentation
+                  <img
+                    class="right--arrow"
+                    src="./images/right-arrow.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="label--desc">
+                  Start integrating stripe's products and tools
+                </div>
+              </span>
+            </div>
+
+            <div class="sec__links--container">
+              <h4 class="sec__title">GET STARTED</h4>
+
+              <ul class="sec__links">
+                <li class="sec__link">Prebuilt checkout</li>
+                <li class="sec__link">Liberaries and SDKs</li>
+                <li class="sec__link">Plugins</li>
+                <li class="sec__link">Code samples</li>
+              </ul>
+            </div>
+
+            <div class="sec__links--container">
+              <h4 class="sec__title">GET STARTED</h4>
+
+              <ul class="sec__links">
+                <li class="sec__link">Accept online payments</li>
+                <li class="sec__link">Manage subscriptions</li>
+                <li class="sec__link">Send payments</li>
+                <li class="sec__link">Set up in-person payments</li>
+              </ul>
+            </div>
+
+            <ul class="subMenu__items sec--menu">
+              <li class="subMenu--item">
+                <img src="./images/reference.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    Full API reference
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </span>
+              </li>
+
+              <li class="subMenu--item">
+                <img src="./images/support.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    Support
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </span>
+              </li>
+            </ul>
+
+            <ul class="subMenu__items sec--menu">
+              <li class="subMenu--item">
+                <img src="./images/status.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    API status
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </span>
+              </li>
+
+              <li class="subMenu--item">
+                <img src="./images/changelog.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    Changelog
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="company">
+            <ul class="subMenu__items sec--menu">
+              <li class="subMenu--item">
+                <img src="./images/about.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    About stripe
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </span>
+              </li>
+
+              <li class="subMenu--item">
+                <img src="./images/customers.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    Customers
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </span>
+              </li>
+
+              <li class="subMenu--item">
+                <img src="./images/enterprise.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    Enterprise
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </span>
+              </li>
+            </ul>
+
+            <ul class="subMenu__items sec--menu">
+              <li class="subMenu--item">
+                <img src="./images/jobs.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    Jobs
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </span>
+              </li>
+
+              <li class="subMenu--item">
+                <img src="./images/newsroom.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    Newsroom
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </span>
+              </li>
+
+              <li class="subMenu--item">
+                <img src="./images/partners.svg" alt="" />
+                <span class="label__container">
+                  <div class="label">
+                    Partners
+                    <img
+                      class="right--arrow"
+                      src="./images/right-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </span>
+              </li>
+            </ul>
+
+            <div class="more__info">
+              <h4 class="sec__title">From the blog</h4>
+              <div class="more__links">
+                <a href="#">European payment methods available worldwide</a>
+                <a href="#">We built Checkout so you don't have to</a>
+                <a href="#">To design and develop an interactive globe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+  <script src="app.js"></script>
+</html>
